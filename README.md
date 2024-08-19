@@ -1,3 +1,4 @@
+![Preview](./github_md_preview.png)
 
 ## SHOPPAmee ~
 « *Un e-commerce? Un mercatino dell'usato? Tutti e due!* »
