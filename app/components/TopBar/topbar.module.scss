@@ -1,0 +1,29 @@
+@use "../../assets/variables";
+@use "../../assets/mixins";
+
+.container {
+  @include mixins.barsContainer();
+  top: 0;
+  padding-inline: 2em;
+
+  .icon {
+    transform: scale(2);
+  }
+  .iconActive {
+    transform: scale(2);
+    color: variables.$primaryColor;
+  }
+
+  .active {
+    display: hidden;
+    height: 30px;
+    color: variables.$greyBackground;
+  }
+
+}
+  @media screen and (min-width: 576px) {
+  .container {
+    max-width: 576px;
+    margin: auto;
+  }
+}

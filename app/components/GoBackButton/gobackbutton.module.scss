@@ -1,0 +1,21 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.goBack {
+  @include mixins.goBack();
+
+  .icon {
+    color: variables.$primaryColor;
+  }
+
+  &:hover {
+    @include mixins.goBack();
+
+    .icon {
+      color: #000;
+    }
+    .back {
+      color: variables.$primaryColor;
+    }
+  }
+}

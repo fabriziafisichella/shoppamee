@@ -1,0 +1,60 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.container {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  .altCol {
+    color: #ff7828;
+  }
+  
+  .image {
+    height: 20em;
+    width: 15em;
+    border-radius: 2em;
+    margin: 2em;
+    box-shadow: 0px 0px 10px #0000004b;
+    object-fit: cover;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+
+    .userButtons {
+      outline: none;
+      background: none;
+      padding: 15px;
+      margin-top: 1em;
+      cursor: pointer;
+      transition: 0.35s all;
+      color: #ff7828;
+      width: 10em;
+      font-weight: 600;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid variables.$greyBackground;
+
+      &:hover {
+        color: #000;
+        border-color: #e3b676;
+        background-color: #e3b676;
+      }
+    }
+
+    .button {
+      margin-top: 1em;
+      @include mixins.button();
+      width: 10em;
+      height: 50px;
+      padding: 15px;
+    }
+  }
+}

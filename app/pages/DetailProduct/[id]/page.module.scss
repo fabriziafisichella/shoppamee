@@ -1,0 +1,77 @@
+@use "../../../assets/mixins";
+
+.container {
+  margin: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    width: 20em;
+    height: 30em;
+    border-radius: 30px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.212);
+  }
+
+  .infoBox {
+    display: flex;
+    flex-direction: rows;
+    margin: 1em;
+    width: 18em;
+    justify-content: space-between;
+
+    .info {
+      width: 60em;
+
+      .title {
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1em;
+      }
+
+      .price {
+        font-size: 1.5em;
+        margin-block: 5px;
+        padding-right: 36px;
+        color: #ff7828;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+
+    .addFav {
+      text-align: right;
+      margin: 1em;
+      width: 100%;
+
+      .iconHeart {
+        font-size: 3em;
+        color: #ff7828;
+        font-weight: 900;
+        cursor: pointer;
+        transition: 0.35s all;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+  .description {
+    text-align: center;
+    width: 90%;
+    margin: -1em 1em 2em 1em;
+    font-size: 0.9em;
+  }
+  button {
+    @include mixins.button();
+    width: 20em;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 3em;
+  }
+}

@@ -1,0 +1,9 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.container {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

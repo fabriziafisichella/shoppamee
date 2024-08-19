@@ -1,0 +1,81 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.exploreContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .exploreImage {
+    position: relative;
+    width: 100%;
+    height: 10em;
+    margin: 1em 1em 1.5em 1em;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(https://images.pexels.com/photos/1833306/pexels-photo-1833306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+    .exploreButton {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      background-color: variables.$greyBackground;
+      padding: 4px 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: 0.35s all;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .exploreText {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      color: #fff;
+      text-align: center;
+      font-size: 1.7em;
+      line-height: 1em;
+      font-weight: 600;
+      transform: translateX(-50%);
+      text-shadow: 0 0 10px #000;
+
+      .exploreAlt {
+        color: #e3b676;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.mottoContainer {
+  width: 100%;
+
+  .mottoSections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 1em;
+    gap: 10px;
+
+    .motto {
+      width: 50%;
+      @include mixins.bannerTitle();
+
+      .altCol {
+        color: #ff7828;
+      }
+    }
+    .mottoImage {
+      width: 50%;
+      height: 5em;
+      background-size: cover;
+      background-position: center;
+      background-image: url(https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      border-radius: 10px;
+    }
+  }
+}

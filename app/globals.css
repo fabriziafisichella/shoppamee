@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  -ms-overflow-style: none; /* Hides ScrollBar in Internet Explorer 10+ */
+  scrollbar-width: none; /* Hides Scrollbar in Firefox and Opera */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Hides ScrollBar in Safari and Chrome */
+}
+
+.minorFix {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    width: 576px;
+    margin: auto;
+  }
+}

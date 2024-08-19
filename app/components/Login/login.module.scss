@@ -1,0 +1,27 @@
+@use "../../assets/variables";
+@use "../../assets/mixins";
+
+.generalContainer {
+  width: 100%;
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    input {
+      @include mixins.input();
+      width: 250px;
+      height: 50px;
+      padding: 15px;
+    }
+
+    button {
+      @include mixins.button();
+      width: 250px;
+      height: 50px;
+      padding: 15px;
+    }
+  }
+}

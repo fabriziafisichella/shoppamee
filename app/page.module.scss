@@ -1,0 +1,38 @@
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 9;
+  background-color: #fff;
+
+  .image {
+    margin-top: -40px;
+  }
+
+  .userButtons {
+    text-align: center;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: 0.35s all;
+    color: #ff7828;
+    font-weight: 600;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
